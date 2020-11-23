@@ -61,7 +61,7 @@
 
             <p class="lead">We koken aan iets nieuws...</p>
 
-            <button type="button" class="btn btn-lg btn-secondary btn-circle" data-toggle="modal" data-target="#staticBackdrop">
+            <button type="button" class="btn btn-lg btn-secondary btn-circle" data-toggle="modal" data-target="#staticBackdrop" data-placement="bottom" title="Klik voor meer info">
                 <i class="fas fa-info-circle"></i>
             </button>
             
@@ -89,6 +89,11 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+<script>
+    $(function () {
+  $('[data-toggle="modal"]').tooltip()
+})
+</script>
 </html>
